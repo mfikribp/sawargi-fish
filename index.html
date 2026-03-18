@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawargi Fish - Kesegaran Langsung dari Kolam</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="assets/logo.jpg" alt="Logo Sawargi Fish" class="logo-img">
+                <span>Sawargi Fish</span>
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#problem-solution">Mengapa Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="#technology">Inovasi</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-small">Pesan Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in-up">Panen Segar Setiap Hari</div>
+                <h1 class="fade-in-up delay-1">Ikan Fresh, Diproses Higienis dari Kolam Langsung ke Meja Makan.</h1>
+                <p class="fade-in-up delay-2"></p>
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="#products" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i> Lihat
+                        Produk</a>
+                    <a href="#how-it-works" class="btn btn-outline"><i class="fa-solid fa-play"></i> Lihat Cara
+                        Kerja</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in-up delay-2">
+                <div class="hero-image">
+                    <img src="assets/ikan.jpg"
+                        alt="Ikan Segar">
+                </div>
+                <div class="floating-card glass top-right">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <strong>Pengiriman Cepat</strong>
+                        <span>Kurang dari 3 Jam</span>
+                    </div>
+                </div>
+                <div class="floating-card glass bottom-left">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <strong>100% Segar</strong>
+                        <span>Dipanen Hari Ini</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Custom Wave Shape Divider -->
+        <div class="custom-shape-divider-bottom-1688005658">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- 2. Problem & Solution -->
+    <section class="section problem-solution" id="problem-solution">
+        <div class="container">
+            <div class="section-badge">Ide Masakan</div>
+            <h2 class="section-title text-center">Bingung Ikan Mau Dimasak Apa?</h2>
+            <p class="section-subtitle text-center">Bosan dengan menu yang itu-itu saja? Kami punya solusinya!</p>
+            
+            <div class="ps-grid">
+                <!-- Sisi Masalah: Kebosanan Menu -->
+                <div class="ps-card problem-card">
+                    <div class="ps-icon"><i class="fa-solid fa-face-frown"></i></div>
+                    <h3>Menu Membosankan</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-exclamation"></i> Lele? Paling cuma jadi Pecel Lele</li>
+                        <li><i class="fa-solid fa-circle-exclamation"></i> Mujair? Ujungnya digoreng atau dibakar lagi</li>
+                        <li><i class="fa-solid fa-circle-exclamation"></i> Pengen variasi tapi tidak sempat cari resep</li>
+                    </ul>
+                </div>
+
+                <div class="ps-vs">VS</div>
+
+                <!-- Sisi Solusi: Ide Praktis -->
+                <div class="ps-card solution-card">
+                    <div class="ps-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Coba Ide Simpel Ini!</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Ikan Marinasi:</strong> Praktis tinggal goreng/bakar</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Ikan Saus Tiram:</strong> Gurih manis ala restoran</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Ikan Krispi Saus:</strong> Renyah & kekinian disukai anak</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Featured Products -->
+    <section class="section bg-light" id="products">
+        <div class="container">
+            <div class="section-badge text-center">Hasil Panen Kami</div>
+            <h2 class="section-title text-center">Ikan Segar Unggulan Kami</h2>
+            <p class="section-subtitle text-center">Ikan air tawar kualitas premium yang dibesarkan dalam ekosistem digital yang terpantau.</p>
+
+            <div class="grid-3 pt-4">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1598215439218-f79b4ed1cbfa?auto=format&fit=crop&w=600&q=80"
+                            alt="Nila Premium">
+                        <span class="product-tag">Terlaris</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nila Premium (Tilapia)</h3>
+                        <p>Daging tinggi protein dan manis tanpa rasa lumpur berkat sistem kolam yang terkontrol.</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 35.000 <small>/kg</small></span>
+                            <span class="stock text-green"><i class="fa-solid fa-circle"></i> Tersedia</span>
+                        </div>
+                        <a href="https://wa.me/62895351230947?text=Halo%20Sawargi%20Fish,%20saya%20ingin%20memesan%20Nila%20Premium"
+                            class="btn btn-primary w-100" target="_blank">Pesan via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"
+                            alt="Lele Bersih">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lele Bersih</h3>
+                        <p>Diberi pakan pelet organik berkualitas, menjamin daging yang bersih, tidak amis, dan lembut.</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 25.000 <small>/kg</small></span>
+                            <span class="stock text-green"><i class="fa-solid fa-circle"></i> Tersedia</span>
+                        </div>
+                        <a href="https://wa.me/62895351230947?text=Halo%20Sawargi%20Fish,%20saya%20ingin%20memesan%20Lele%20Bersih"
+                            class="btn btn-primary w-100" target="_blank">Pesan via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1580481072645-022f9a6d4ce8?auto=format&fit=crop&w=600&q=80"
+                            alt="Ikan Gurame">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ikan Gurame</h3>
+                        <p>Ukuran sempurna untuk dibakar atau digoreng. Dibesarkan di kolam luas kaya oksigen untuk pertumbuhan optimal.</p>
+                        <div class="product-meta">
+                            <span class="price">Rp 50.000 <small>/kg</small></span>
+                            <span class="stock text-green"><i class="fa-solid fa-circle"></i> Tersedia</span>
+                        </div>
+                        <a href="https://wa.me/62895351230947?text=Halo%20Sawargi%20Fish,%20saya%20ingin%20memesan%20Ikan%20Gurame"
+                            class="btn btn-primary w-100" target="_blank">Pesan via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us -->
+    <section class="section features" id="features">
+        <div class="container">
+            <h2 class="section-title text-center">Mengapa Sawargi Fish?</h2>
+            <div class="grid-4 pt-4">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-fish-fins"></i></div>
+                    <h4>Baru Saja Dipanen</h4>
+                    <p>Kami hanya menangkap ikan saat pesanan terkonfirmasi, menjamin tidak ada waktu penyimpanan.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-hands-bubbles"></i></div>
+                    <h4>Proses Higienis</h4>
+                    <p>Dibersihkan, disisik, dan dikemas dengan bahan food-grade di bawah protokol sanitasi ketat.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h4>Harga Terjangkau</h4>
+                    <p>Tanpa perantara, memungkinkan kami menawarkan ikan premium dengan harga langsung dari kolam.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                    <h4>Pengiriman Cepat</h4>
+                    <p>Pengiriman langsung ke lokasi Anda menggunakan kurir instan untuk menjaga kesegaran.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. How It Works -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-badge text-center">Proses</div>
+            <h2 class="section-title text-center">Dari Kolam ke Piring dalam 4 Langkah</h2>
+
+            <div class="steps-container pt-4">
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Pilih Ikan Anda</h4>
+                        <p>Jelajahi katalog kami dan pilih ikan yang Anda inginkan melalui website kami.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Langsung Dipanen</h4>
+                        <p>Setelah pesanan diterima, petani kami akan menjaring ikan tersegar langsung dari kolam.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Pengemasan Higienis</h4>
+                        <p>Ikan dibersihkan, dicuci, dan dikemas vakum dengan aman untuk mengunci kesegaran.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Dikirim ke Anda</h4>
+                        <p>Kurir kami mengirimkannya langsung ke depan pintu Anda. Siap untuk segera dimasak!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Technology Section (Crucial) -->
+    <section class="section technology bg-blue" id="technology">
+        <div class="container tech-container">
+            <div class="tech-content">
+                <div class="section-badge">Inovasi</div>
+                <h2 class="section-title text-white">Teknologi Smart Farming</h2>
+                <p class="text-white">Sawargi Fish bukan sekedar kolam tradisional. Kami adalah inisiatif techno-preneurship yang memanfaatkan sistem akuakultur modern.</p>
+                <ul class="tech-list">
+                    <li>
+                        <i class="fa-solid fa-microchip"></i>
+                        <div>
+                            <strong>Monitoring Kualitas Air IoT</strong>
+                            <span>Sensor real-time memantau pH, Oksigen, dan Suhu 24/7.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div>
+                            <strong>Sistem Pemesanan Digital</strong>
+                            <span>Katalog online dan sinkronisasi inventaris yang lancar untuk mencegah pengambilan berlebih.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-seedling"></i>
+                        <div>
+                            <strong>Resirkulasi Ramah Lingkungan</strong>
+                            <span>Filtrasi air mutakhir memastikan ikan hidup di lingkungan bersih dan bebas lumpur.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tech-image">
+                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80"
+                    alt="Teknologi dalam Perikanan">
+                <div class="tech-overlay-card">
+                    <div class="chart-bars">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <p>Kemurnian Air: Optimal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-badge text-center">Ulasan</div>
+            <h2 class="section-title text-center">Apa Kata Komunitas Kami</h2>
+
+            <div class="grid-3 pt-4">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Ikan nila dari Sawargi Fish sama sekali tidak ada rasa lumpur. Anak-anak saya menyukainya, dan saya merasa aman karena tahu persis dari mana ikan itu berasal."</p>
+                    <div class="customer">
+                        <div class="customer-avatar">DA</div>
+                        <div>
+                            <strong>Dina Ayu</strong>
+                            <span>Ibu Rumah Tangga</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Sebagai pemilik warung, pasokan yang konsisten dan kualitas segar sangatlah vital. Sawargi menghubungkan saya langsung ke sumbernya. Harga mantap!"</p>
+                    <div class="customer">
+                        <div class="customer-avatar">BR</div>
+                        <div>
+                            <strong>Budi Rustandi</strong>
+                            <span>Pemilik Warung Pecel Lele</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>"Pemesanan online-nya sangat lancar! Dikirim segar ke kosan saya cuma dalam 2 jam. Sangat praktis buat mahasiswa yang sibuk."</p>
+                    <div class="customer">
+                        <div class="customer-avatar">RF</div>
+                        <div>
+                            <strong>Rizky F.</strong>
+                            <span>Mahasiswa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Final CTA -->
+    <section class="cta-section">
+        <div class="container text-center cta-container">
+            <h2>Siap Merasakan Perbedaannya?</h2>
+            <p>Bergabunglah dengan ratusan pelanggan puas yang kini menikmati ikan yang lebih segar, sehat, dan terjangkau.</p>
+            <a href="https://wa.me/62895351230947?text=Halo%20Sawargi%20Fish,%20saya%20tertarik%20untuk%20memesan."
+                class="btn btn-primary btn-large" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang via WhatsApp
+            </a>
+            <p class="mt-3"><small>Tanpa biaya tersembunyi. Bisa bayar di tempat (COD).</small></p>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <img src="assets/logo.jpg" alt="Sawargi Fish Logo" class="logo-img">
+                    <span>Sawargi Fish</span>
+                </a>
+                <p>Menghadirkan techno-preneurship ke dunia akuakultur. Kami menghubungkan kolam pintar modern langsung ke meja makan Anda untuk kesegaran yang tak tertandingi.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="#problem-solution">Tentang Kami</a></li>
+                    <li><a href="#features">Mengapa Kami</a></li>
+                    <li><a href="#technology">Smart Farming</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Dukungan</h4>
+                <ul>
+                    <li><a href="#how-it-works">Cara Memesan</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Kebijakan Pengiriman</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontak Kami</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jl. Kolam Ikan No.88, Jawa Barat, Indonesia</li>
+                    <li><i class="fa-solid fa-phone"></i> +62 895-3512-30947</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@sawargifish.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Sawargi Fish. Hak cipta dilindungi undang-undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
