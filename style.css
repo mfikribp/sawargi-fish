@@ -214,14 +214,17 @@ img:hover {
     color: var(--primary-color);
 }
 
-.logo-img {
-    height: 45px;
+.logo-icon, .logo-img {
+    height: 40px;
     width: auto;
-    filter: none !important; /* Keep original look if desired, or keep monochrome if image is already BW */
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
-.logo-img:hover {
-    transform: scale(1.05);
+.logo:hover .logo-icon, 
+.logo:hover .logo-img {
+    transform: rotate(-10deg) scale(1.15);
 }
 
 .nav-links {
@@ -977,6 +980,18 @@ img:hover {
     100% { opacity: 0.6; }
 }
 
+/* --- Reveal on Scroll --- */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
@@ -1021,24 +1036,27 @@ img:hover {
     
     .nav-links {
         position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: #fffdf5;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--bg-white);
         flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 2rem;
-        transition: 0.3s ease-in-out;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        justify-content: center;
+        padding: 4rem 2rem;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        z-index: 1001;
     }
     
     .nav-links.active {
-        left: 0;
+        right: 0;
     }
     
     .menu-toggle {
         display: block;
+        z-index: 1002;
     }
     
     .hero-content h1 {

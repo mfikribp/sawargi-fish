@@ -30,6 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.add('fa-bars');
             });
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
     }
 
     // 2. Navbar Lengket saat Scroll
@@ -45,29 +55,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Fade-in halus untuk elemen saat scroll (Peningkatan Opsional)
+    // 3. Smooth fade-in for elements on scroll
     const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.15
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target);
+                entry.target.classList.add('visible');
             }
         });
     }, observerOptions);
 
-    // Terapkan animasi ke judul bagian dan beberapa kartu
-    const animatedElements = document.querySelectorAll('.section-title, .feature-box, .product-card, .ps-card, .step-item');
+    const animatedElements = document.querySelectorAll('.section-title, .feature-box, .product-card, .ps-card, .step-item, .tech-list li');
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease-out';
+        el.classList.add('reveal-on-scroll');
         observer.observe(el);
     });
+
+    // 4. Hero Mouse Move Parallax
+    const heroImage = document.querySelector('.hero-image-wrapper');
+    if (heroImage && window.innerWidth > 992) {
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            heroImage.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    }
 });
