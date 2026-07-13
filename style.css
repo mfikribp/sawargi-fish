@@ -1081,4 +1081,34 @@ img:hover {
         padding: 0.5rem 1rem;
     }
     .glass i { display: none; }
+    
+    /* Footer & Mobile Overflow Fixes */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .top-right {
+        top: 1rem;
+        right: 0;
+    }
+    
+    .bottom-left {
+        bottom: 1rem;
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-card.glass {
+        display: none; /* Hide floating info cards on very small screens to avoid clutter */
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .footer-contact ul li {
+        word-break: break-word; /* Ensure long email or addresses wrap cleanly */
+    }
 }
